@@ -4,7 +4,7 @@ Public static site for `https://7hermeticlabscarrier.services`.
 
 ## Boundary
 
-- The repository root contains the public GitHub Pages site, the static Microsoft Entra sign-in shell, and compiled browser assets for the role-gated business and client workspaces.
+- The repository root routes directly into the ported operations frontend. It also contains the static Microsoft Entra sign-in shell and compiled browser assets for the role-gated business and client workspaces.
 - Application source is maintained separately in the private `carrier-services-source` repository. This public repository contains no server source, credentials, tokens, patient information, lender documents, driver records, or protected operating data.
 - Launch-preparation language must remain explicit until the corresponding operating gate has been verified.
 
