@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://login.microsoftonline.com https://*.azurewebsites.net https://hermetic-labs-gateway.azure-api.net; img-src 'self' data:; script-src 'self'; style-src 'self'; font-src 'self'; frame-src 'self' https://login.microsoftonline.com; form-action https://login.microsoftonline.com; base-uri 'none'; object-src 'none'; frame-ancestors 'none'">
+    <title>Hermetic Labs Courier</title>
+    <meta name="description" content="Secure Hermetic Labs courier operations workspace.">
+
+    <link rel="stylesheet" href="./app.css">
+    <script src="./auth-token-bridge.js"></script><script defer src="./brand-mode.js"></script><script type="module" src="./app.js"></script><script defer src="./command-launch.js"></script><script defer src="./connector-status.js"></script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/><link rel="manifest" href="/site.webmanifest"/></head>
+  <body data-auth-state="checking">
+    <div class="ambient ambient--one"></div>
+    <div class="ambient ambient--two"></div>
+
+    <header class="topbar">
+      <a class="brand" href="./?destination=business" aria-label="Hermetic Labs Courier workspace">
+        <img src="../favicon.svg" alt="" width="48" height="48">
+        <span><strong>Hermetic Labs</strong><small>Courier</small></span>
+      </a>
+      <div class="topbar__actions">
+        <div class="identity" id="identity" hidden>
+          <span class="identity__dot"></span>
+          <span><strong id="identity-name"></strong><small id="identity-email"></small></span>
+        </div>
+        <button class="button button--quiet" id="sign-out" type="button">Sign out</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="gate" id="auth-state" aria-live="polite">
+        <div class="route-signal" id="loading" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p class="eyebrow" id="state-eyebrow">Secure workspace</p>
+        <h1 id="state-title">Checking your session</h1>
+        <p class="gate__message" id="state-message">Resolving Microsoft Entra identity and Hermetic Labs organization access.</p>
+        <p class="error-detail" id="error-detail" hidden></p>
+        <div class="gate__actions">
+          <button class="button button--primary" id="sign-in" type="button" hidden>Continue with Microsoft</button>
+          <button class="button button--primary" id="retry" type="button" hidden>Retry access check</button>
+        </div>
+        <div class="boundary">
+          <span>1 · Microsoft identity</span>
+          <i></i>
+          <span>2 · Courier access</span>
+          <i></i>
+          <span>3 · Role-scoped workspace</span>
+        </div>
+      </section>
+
+      <section class="workspace" id="workspace-shell" hidden>
+        <div class="workspace__heading">
+          <div>
+            <p class="eyebrow">Authenticated operations surface</p>
+            <h1>Workspace access verified</h1>
+            <p>Entra established identity. Hermetic Labs independently established organization membership and role.</p>
+          </div>
+          <div class="workspace-launch"><span class="role-chip"><span></span><b id="member-role">member</b></span><a class="button button--primary" id="open-command" href="./business/">Open courier launch control</a></div>
+        </div>
+
+        <div class="boundary-card">
+          <div><small>Identity provider</small><strong>Microsoft Entra ID</strong></div>
+          <b>→</b>
+          <div><small>Authorization authority</small><strong>Hermetic Labs Operations API</strong></div>
+          <b>→</b>
+          <div><small>Operational policy</small><strong>Organization + role</strong></div>
+        </div>
+
+        <div class="surface-grid" aria-label="Hermetic Labs courier surface status">
+          <article>
+            <span class="surface-icon">01</span>
+            <p class="eyebrow">Driver continuity</p>
+            <h2>Local-first route sync</h2>
+            <p>Durable capture, ordered outbox processing, idempotent replay, and evidence reconciliation are ready behind the shared API contract.</p>
+            <span class="status-tag">Core connected</span>
+          </article>
+          <article>
+            <span class="surface-icon">02</span>
+            <p class="eyebrow">Chain of custody</p>
+            <h2>Gated package capture</h2>
+            <p>Barcode and exception-first collection flows attach evidence to stops without asking drivers to navigate an administrative system.</p>
+            <span class="status-tag status-tag--next">UI mount next</span>
+          </article>
+          <article>
+            <span class="surface-icon">03</span>
+            <p class="eyebrow">Operations intelligence</p>
+            <h2>API + MCP context</h2>
+            <p>One policy boundary supplies the web app, iOS wrapper, automation, and model with the same organization-scoped operational truth.</p>
+            <span class="status-tag">Core connected</span>
+          </article>
+        </div>
+
+        <section
+          class="connector-panel"
+          id="connector-panel"
+          data-api-base="https://hermetic-labs-gateway.azure-api.net/carrier"
+          data-organization-id="b248cd23-403c-49ba-b6c6-321ea32a8178"
+          hidden
+        >
+          <div class="connector-panel__heading">
+            <div>
+              <p class="eyebrow">Dispatch connector fabric</p>
+              <h2>One operating model, replaceable provider edges</h2>
+              <p>Hermetic Labs keeps authority, package identity, audit, and recovery in the core while each dispatch service advertises its honest boundaries.</p>
+            </div>
+            <p class="connector-panel__status" id="connector-status" role="status" aria-live="polite">Loading governed connector capabilities…</p>
+          </div>
+          <ul class="connector-list" id="connector-list" aria-label="Dispatch provider readiness"></ul>
+        </section>
+
+        <section class="access-panel" id="access-panel" hidden>
+          <div class="access-panel__heading">
+            <div>
+              <p class="eyebrow">Administrator</p>
+              <h2>Workspace access</h2>
+              <p>Add an exact email or a domain beginning with <code>@</code>, then assign the least-privileged starting role.</p>
+            </div>
+            <p class="access-note">An access rule authorizes an existing tenant identity. External guest invitation remains a separate Entra administrative action for this pilot.</p>
+          </div>
+          <form class="rule-form" id="add-rule-form">
+            <label>
+              <span>Email or domain</span>
+              <input id="rule-input" name="rule" type="text" autocomplete="off" placeholder="operator@example.com or @example.com" required minlength="3" maxlength="254">
+            </label>
+            <label>
+              <span>Starting role</span>
+              <select id="rule-role" name="memberRole">
+                <option value="viewer">Viewer</option>
+                <option value="driver">Driver</option>
+                <option value="dispatcher">Dispatcher</option>
+                <option value="administrator">Administrator</option>
+              </select>
+            </label>
+            <button class="button button--primary" type="submit">Add access</button>
+          </form>
+          <p class="access-status" id="access-status" aria-live="polite"></p>
+          <ul class="rules" id="access-rules"></ul>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <span>Hermetic Labs Courier</span>
+      <span>Static shell · Entra identity · API-enforced authorization</span>
+    </footer>
+  </body>
+</html>
