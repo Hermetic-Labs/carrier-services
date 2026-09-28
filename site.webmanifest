@@ -1,0 +1,27 @@
+{
+  "name": "Hermetic Labs Carrier Services",
+  "short_name": "Carrier Services",
+  "description": "Hermetic Labs medical transport operations workspace.",
+  "start_url": "/app/?destination=business",
+  "display": "standalone",
+  "background_color": "#030711",
+  "theme_color": "#030711",
+  "icons": [
+    {
+      "src": "/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/carrier-mark.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
