@@ -1,4 +1,4 @@
-# Carrier coachmark media drop
+# Courier coachmark media drop
 
 Drop all finished coachmark media directly into this folder. Do not create subfolders and do not rename the stems.
 
@@ -32,7 +32,7 @@ The application URL prefix is `/media/coachmarks/`.
 - [ ] `DSP-RECOVERY.poster.webp`
 - [ ] `DSP-RECOVERY.captions.vtt`
 
-## Carrier AI and MCP
+## Courier AI and MCP
 
 - [ ] `AI-GROUNDED.video.mp4`
 - [ ] `AI-GROUNDED.audio.m4a`
@@ -56,4 +56,4 @@ The application URL prefix is `/media/coachmarks/`.
 - Do not include patient information, raw production barcodes, credentials, tenant identifiers, or real delivery addresses.
 - Video remains optional enhancement: the transcript and interface must carry the full instruction without it.
 
-The approved shot lists and voiceovers are in `docs/coachmark-media-script.md` in the Carrier source repository.
+The approved shot lists and voiceovers are in `docs/coachmark-media-script.md` in the Courier source repository.
