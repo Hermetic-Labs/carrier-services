@@ -1,6 +1,6 @@
 # Hermetic Labs Carrier Services site
 
-Public static site for `https://7hermeticlabscarrier.services`.
+Public static site for `https://7hermeticlabs.services`.
 
 ## Boundary
 
@@ -10,7 +10,7 @@ Public static site for `https://7hermeticlabscarrier.services`.
 
 ## Hosting
 
-The site is published from the repository root to `https://7hermeticlabscarrier.services` with HTTPS enforced. Compiled application shells are generated from the private source repository and copied here as release artifacts.
+The site is published from the repository root to `https://7hermeticlabs.services` with HTTPS enforced. Compiled application shells are generated from the private source repository and copied here as release artifacts.
 
 ## Logo handoff
 

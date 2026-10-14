@@ -1,6 +1,6 @@
 {
-  "name": "Hermetic Labs Courier Services",
-  "short_name": "Courier Services",
+  "name": "Hermetic Labs Carrier Services",
+  "short_name": "Carrier Services",
   "description": "Hermetic Labs medical transport operations workspace.",
   "start_url": "/app/?destination=business",
   "display": "standalone",
@@ -18,7 +18,7 @@
       "type": "image/png"
     },
     {
-      "src": "/courier-mark.png",
+      "src": "/carrier-mark.png",
       "sizes": "1254x1254",
       "type": "image/png",
       "purpose": "any maskable"
