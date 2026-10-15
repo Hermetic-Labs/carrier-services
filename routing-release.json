@@ -1,1 +1,9 @@
-{"sourceCommit":"ef5a0c3","features":["100 Atlanta test shipments","map route cards","shipment reassignment"],"publishedDate":"2026-10-14"}
+{
+  "sourceCommit": "ed66d79",
+  "features": [
+    "Atlanta map routing",
+    "Shared 100 test shipments in Jobs",
+    "Saved driver assignments and reassignment synchronization"
+  ],
+  "publishedDate": "2026-10-14"
+}
