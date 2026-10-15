@@ -1,11 +1,12 @@
 {
-  "sourceCommit": "c3b43bd",
+  "sourceCommit": "4785b06",
   "features": [
     "Atlanta map routing",
     "Shared 100 test shipments in Jobs",
     "Saved driver assignments and reassignment synchronization",
     "Visible Finalize route button in dark mode",
-    "Shipment day filtering, detail map and timestamped test assignment activity"
+    "Shipment day filtering, detail map and timestamped test assignment activity",
+    "Editable shipment statuses, restricted individual driver reassignment, categorized notes"
   ],
   "publishedDate": "2026-10-14"
 }
