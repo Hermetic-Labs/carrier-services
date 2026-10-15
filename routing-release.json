@@ -1,9 +1,10 @@
 {
-  "sourceCommit": "ed66d79",
+  "sourceCommit": "af74da3",
   "features": [
     "Atlanta map routing",
     "Shared 100 test shipments in Jobs",
-    "Saved driver assignments and reassignment synchronization"
+    "Saved driver assignments and reassignment synchronization",
+    "Visible Finalize route button in dark mode"
   ],
   "publishedDate": "2026-10-14"
 }
