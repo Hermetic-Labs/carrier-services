@@ -1,7 +1,7 @@
 {
-  "sourceCommit": "4d16492",
+  "sourceCommit": "c0980d9",
   "features": [
-    "Single, area, address-radius, and directional route selection",
+    "Single, area, guided address-radius, and direct-start directional route selection",
     "Street-based route optimization with current-time traffic estimates",
     "Organization roles, client-scoped access, and customizable user permissions",
     "Client rate, billing, and invoice administration foundations",
