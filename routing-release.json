@@ -1,11 +1,11 @@
 {
-  "sourceCommit": "c0980d9",
+  "sourceCommit": "0aa9746",
   "features": [
-    "Single, area, guided address-radius, and direct-start directional route selection",
-    "Street-based route optimization with current-time traffic estimates",
+    "Single, area, typed-or-shipment-centered radius, and direct-start directional route selection",
+    "Road-geometry-only route lines with current-time traffic estimates",
     "Organization roles, client-scoped access, and customizable user permissions",
     "Client rate, billing, and invoice administration foundations",
-    "AI guidance for routing, client operations, billing, and access controls",
+    "AI guidance for routing, client operations, billing, and access controls with interactive session recovery",
     "Updated Entra sign-in configuration for the published site"
   ],
   "publishedDate": "2026-10-20"
