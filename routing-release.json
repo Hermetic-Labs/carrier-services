@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "d595980",
+  "sourceCommit": "ca2bb74",
   "features": [
     "Single, area, typed-or-shipment-centered radius, and direct-start directional route selection",
     "Road-geometry-only route lines with current-time traffic estimates",
@@ -7,7 +7,9 @@
     "Client rate, billing, and invoice administration foundations",
     "AI guidance for routing, client operations, billing, and access controls with Azure session recovery",
     "Cross-platform database migration validation for reliable text and realtime AI startup",
-    "Updated Entra sign-in configuration for the published site"
+    "Updated Entra sign-in configuration for the published site",
+    "AI draft routes apply against the shipment day currently shown on Live Map",
+    "Manual voice turns use Record, Stop, and Send while muting the microphone during AI responses"
   ],
   "publishedDate": "2026-10-20"
 }
