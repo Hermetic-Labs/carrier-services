@@ -1,11 +1,12 @@
 {
-  "sourceCommit": "0aa9746",
+  "sourceCommit": "d595980",
   "features": [
     "Single, area, typed-or-shipment-centered radius, and direct-start directional route selection",
     "Road-geometry-only route lines with current-time traffic estimates",
     "Organization roles, client-scoped access, and customizable user permissions",
     "Client rate, billing, and invoice administration foundations",
-    "AI guidance for routing, client operations, billing, and access controls with interactive session recovery",
+    "AI guidance for routing, client operations, billing, and access controls with Azure session recovery",
+    "Cross-platform database migration validation for reliable text and realtime AI startup",
     "Updated Entra sign-in configuration for the published site"
   ],
   "publishedDate": "2026-10-20"
