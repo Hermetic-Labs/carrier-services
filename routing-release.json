@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "ca2bb74",
+  "sourceCommit": "7dbaded",
   "features": [
     "Single, area, typed-or-shipment-centered radius, and direct-start directional route selection",
     "Road-geometry-only route lines with current-time traffic estimates",
@@ -9,7 +9,8 @@
     "Cross-platform database migration validation for reliable text and realtime AI startup",
     "Updated Entra sign-in configuration for the published site",
     "AI draft routes apply against the shipment day currently shown on Live Map",
-    "Manual voice turns use Record, Stop, and Send while muting the microphone during AI responses"
+    "Manual voice turns use Record, Stop, and Send while muting the microphone during AI responses",
+    "Stopping a voice recording transcribes it into the text box for review before Send voice becomes available"
   ],
   "publishedDate": "2026-10-20"
 }
